@@ -34,7 +34,7 @@ app.use(middleware.logger);
 
 // when you want add route level middleware, all you have to do is reference the function as the second argument (as below), and then as the 3rd argument have the route's callback function
 app.get('/about', middleware.requireAuthentication, function (req, res) {
-	res.send('About Us');
+	res.send('About Us!');
 });
 
 app.use(express.static(__dirname + '/public'));		// expose folder in web server
